@@ -25,7 +25,7 @@ jobs:
       - name: Copy output from Tosca tests to local repo
         run: >-
           Xcopy /e /i /y C:\temp\DEX\DEXResults\Result.xml
-          C:\actions-runner\_work\Sriram_Demo\Sriram_Demo
+          C:\Users\Administrator\actions-runner\_work\DemoRep\DemoRep
       - name: Test Reporter
         uses: dorny/test-reporter@v1.4.3
         with:
