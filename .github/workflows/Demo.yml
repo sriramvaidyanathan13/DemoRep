@@ -29,11 +29,11 @@ jobs:
       # This is on prep for a full E2E demo using the DevOps Tricentis Server
       - name: Copy Files to Deployment
 	run: Xcopy /e /i /y * C:\Deployment\
-      # Execute Tosca tests, the Powershell script is in the repo
-      - name: RunToscaTests
+	# Execute Tosca tests, the Powershell script is in the repo
+	- name: RunToscaTests
       	run: ./RunToscaTests.ps1
-      # Attach teh report to the run
-      - name: Attach the report
+	# Attach teh report to the run
+	- name: Attach the report
 	if: always()
 	uses: actions/upload-artifact@v1
 	with:
@@ -44,9 +44,8 @@ jobs:
 	run: Xcopy /e /i /y C:\temp\Result.xml C:\actions-runner\_work\Bernhard_Klemm_Demo\Bernhard_Klemm_Demo
       - name: Test Reporter
 	uses: dorny/test-reporter@v1.4.3
-
 	with:
-	  name: Test
+	name: Test
 	  # Coma separated list of paths to test results
-	  path: Result.xml
-	  reporter: java-junit
+	path: Result.xml
+	reporter: java-junit
