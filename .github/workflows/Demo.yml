@@ -32,12 +32,12 @@ jobs:
       # Execute Tosca tests, the Powershell script is in the repo
       - name: RunToscaTests
       	run: ./RunToscaTests.ps1
-# Attach teh report to the run- name: Attach the report
+      # Attach teh report to the run- name: Attach the report
 	if: always()
 	uses: actions/upload-artifact@v1
 	with:
-		name: Results.xml
-		path: C:\temp\Result.xml
+	name: Results.xml
+	path: C:\temp\Result.xml
 	# Publish Unit Test Results to github
       - name: Copy output from Tosca tests to local repo
 	run: Xcopy /e /i /y C:\temp\Result.xml C:\actions-runner\_work\Bernhard_Klemm_Demo\Bernhard_Klemm_Demo
