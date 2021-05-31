@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: Results.xml
-          path: 'C:\temp\Result.xml'
+          path: 'C:\temp\DEX\DEXResults\result.xml'
       - name: Copy output from Tosca tests to local repo
         run: >-
           Xcopy /e /i /y C:\temp\DEX\DEXResults\Result.xml
