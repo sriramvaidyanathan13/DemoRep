@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\Client\ToscaCIClient.exe" -m local -r "C:\temp\DEX\DEXResults\result.xml"
