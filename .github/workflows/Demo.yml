@@ -28,9 +28,9 @@ jobs:
       - uses: actions/checkout@v2
       # This is on prep for a full E2E demo using the DevOps Tricentis Server
       - name: Copy Files to Deployment
-	run: Xcopy /e /i /y * C:\Deployment\
-	# Execute Tosca tests, the Powershell script is in the repo
-	- name: RunToscaTests
+      	run: Xcopy /e /i /y * C:\Deployment\
+      # Execute Tosca tests, the Powershell script is in the repo
+      - name: RunToscaTests
       	run: ./RunToscaTests.ps1
 	# Attach teh report to the run
 	- name: Attach the report
