@@ -15,7 +15,7 @@ jobs:
       - name: Copy Files to Deployment
         run: 'Xcopy /e /i /y * C:\Deployment\'
       - name: Run Tosca Tests
-        run: ./RunToscaTests.ps1
+        run: ./RunToscaTests.bat
       - name: Attach the report
         if: always()
         uses: actions/upload-artifact@v1
