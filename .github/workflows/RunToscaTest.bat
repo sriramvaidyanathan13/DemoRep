@@ -1,1 +1,1 @@
-"C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\Client\ToscaCIClient.exe" -m local -r "C:\temp\DEX\DEXResults\result.xml"
+java -jar ToscaCIJavaClient.jar -m distributed -c “c:/temp/TestConfigurationCIExecution.xml” -e “https://toscademovm:443/DistributionServerService/ManagerService.svc” -r “c:/temp/result.xml”
