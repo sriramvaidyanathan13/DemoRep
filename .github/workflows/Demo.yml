@@ -24,7 +24,7 @@ jobs:
 
       - name: Attach the report
         if: always()
-        uses: actions/upload-artifact@v2 # Reference from repository
+        uses: actions/upload-artifact@v2
         with:
           name: Result.xml
           path: C:\temp\DEX\DEXResults\result.xml
