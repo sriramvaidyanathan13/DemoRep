@@ -34,7 +34,7 @@ jobs:
           xcopy /e /i /y C:\temp\DEX\DEXResults\result.xml C:\Users\Administrator\actions-runner\actions-runner\_work\DemoRep\DemoRep\
 
       - name: Test Reporter
-        uses: dorny/test-reporter@v1.4.3
+        uses: dorny/test-reporter@v1.4.4
         with:
           name: ToscaTestResults
           path: Result.xml
