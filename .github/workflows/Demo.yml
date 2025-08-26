@@ -37,5 +37,5 @@ jobs:
         uses: dorny/test-reporter@v2
         with:
           name: ToscaTestResults
-          path: C:\temp\DEX\DEXResults\result.xml
+          path: Result.xml
           reporter: java-junit
